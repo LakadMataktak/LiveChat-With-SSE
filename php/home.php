@@ -131,6 +131,7 @@ $seasonal_animes = $reference;
 								 case EventSource.CONNECTING:
 										 break;
 								 case EventSource.CLOSED:
+								 alert('Connection Lost! Sorry');
 										 break;
 						 }
 				 };
