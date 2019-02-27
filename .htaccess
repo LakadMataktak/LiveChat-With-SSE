@@ -1,4 +1,3 @@
-php_flag "output_buffering" 4096
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews
