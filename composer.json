@@ -1,0 +1,17 @@
+{
+    "name": "htoo_lab/LiveChat",
+    "description": "fun project",
+    "type": "composer-plugin",
+    "minimum-stability": "stable",
+    "autoload":
+    {
+    	"psr-4":
+    	{
+    		"tools\\routers\\": "class/",
+    		"tools\\illuminate\\": "class/"
+    	}
+    },
+    "require": {
+        "kreait/firebase-php": "4.18"
+    }
+}
