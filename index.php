@@ -12,8 +12,6 @@
 	require_once("routes.php");
 	$page = $router -> route_page($request_page);
 	if($page = $router -> route_page($request_page)) {
-		echo $page;
-		exit();
 		require_once($page);
 	}
 	
