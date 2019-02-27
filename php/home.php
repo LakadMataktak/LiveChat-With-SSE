@@ -86,7 +86,7 @@ $seasonal_animes = $reference;
 				</section>
 
 				<script>
-				 const es = new EventSource('http://localhost/htoo_lab/live_chat/channel');
+				 const es = new EventSource('channel');
 				 const view = document.getElementById('view');
 
 				 var Base64 = {
@@ -100,7 +100,7 @@ $seasonal_animes = $reference;
 
 				 function send() {
 				 	document.body.style.cursor='wait';
-						 fetch('http://localhost/htoo_lab/live_chat/push?name='+document.getElementById('name').value+'&q='+document.getElementById('user').value).then(
+						 fetch('push?name='+document.getElementById('name').value+'&q='+document.getElementById('user').value).then(
     function(response) {
       if (response.status == 200) {
       		document.body.style.cursor='default';
