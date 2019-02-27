@@ -110,14 +110,16 @@ $seasonal_animes = $reference;
 
 				 es.addEventListener('message', function (event) {
 						 let message = event.data;
-						 console.log(message);
+						 var message_arr = JSON.parse(message);
+						 var name = message_arr[0];
+						 var msg = message_arr[1];
 						 let html = `
 								 <article class="card">
 										 <header>
-												 ${message.split(" ")[0]}
+												 ${name}
 										 </header>
 										 <footer>
-												 ${message.split(" ").slice(1).join(" ").replace(/%\\n/g, "<br>")}
+												 ${msg}
 										 </footer>
 								 </article>
 						 `;

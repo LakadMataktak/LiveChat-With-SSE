@@ -57,7 +57,8 @@ while (1) {
 								$contents = str_replace("\n", "%\\n", $contents);
 						}
 						if ($name != "" && $contents != "") 
-							echo "data: $name $contents \n\n";
+							$json = json_encode(array($name, $contents));
+							echo "data: $json \n\n";
 							echo str_repeat(' ',1024*64) . "\n";
 							//this is for the buffer achieve the minimum size in order to flush data
 				// }
